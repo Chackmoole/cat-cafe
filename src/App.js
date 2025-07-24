@@ -1,9 +1,9 @@
-import { PageWrapper } from './components/layout/page-wrapper';
+import { Layout } from './components/layout/layout';
 import './App.css';
 
 function App() {
   return (
-    <PageWrapper />
+    <Layout />
   );
 }
 
