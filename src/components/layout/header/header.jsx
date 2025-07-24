@@ -5,6 +5,6 @@ import { Button } from '../../ui/button/button';
 export const Header = () => { 
     return <header className='header'>
         <Logo />
-        <Button children={"Купить билет"} />
+        <Button>Купить билет </Button>
     </header>
 }

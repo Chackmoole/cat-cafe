@@ -1,12 +1,11 @@
-import { Header } from '../blocks/header/header'
-import { Main } from '../blocks/main/main'
-import { Footer } from '../blocks/footer/footer'
+import { Header } from './header/header'
+import { Footer } from './footer/footer'
 import './layout-style.css'
 
-export const Layout = () => { 
+export const Layout = ({ children } ) => { 
     return <div className='layout'>
         <Header />
-        <Main /> 
+        { children } 
         <Footer/>
     </div>
 }
