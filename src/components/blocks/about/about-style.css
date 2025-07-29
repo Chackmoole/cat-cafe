@@ -12,3 +12,16 @@
 .about__description {
     margin-bottom: 40px;
 }
+
+.about__plate {
+    position: relative;
+    padding-left: 20px;
+}
+
+.about__plate::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: url('../../../assests/svg/maps-and-flags1.svg');
+}
