@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #FFF6D9;
+    padding: 78px 90px;
+}
+
+.about__title {
+    margin: 0 0 20px 0;
+}
+
+.about__description {
+    margin-bottom: 40px;
+}
