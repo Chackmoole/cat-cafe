@@ -1,5 +1,4 @@
 import './stars-list-style.css';
-// import firstPic from '../../../assests/img/cat-lucky.jpg'
 import { StarCard } from '../star-card/star-card';
 import { catsList } from '../../../mocks/cats-list';
 
