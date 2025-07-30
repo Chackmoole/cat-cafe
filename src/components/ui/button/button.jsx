@@ -1,5 +1,5 @@
 import './button-style.css'
 
-export const Button = ({ children}) => { 
-    return <button className='primary-button'>{children}</button>
+export const Button = ({ children, minWidth = ''}) => { 
+    return <button className='primary-button' style={{ minWidth: minWidth }}>{children}</button>
 }
