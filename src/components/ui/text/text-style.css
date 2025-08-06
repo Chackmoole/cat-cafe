@@ -1,0 +1,12 @@
+.text {
+    margin: 0;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.text-small {
+    font-size: 14px;
+    line-height: 130%;
+}

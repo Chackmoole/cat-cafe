@@ -1,0 +1,27 @@
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #FFF6D9;
+    padding: 78px 90px;
+}
+
+.about__title {
+    margin: 0 0 20px 0;
+}
+
+.about__description {
+    margin-bottom: 40px;
+}
+
+.about__plate {
+    position: relative;
+    padding-left: 20px;
+}
+
+.about__plate::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: url('../../../assests/svg/maps-and-flags1.svg');
+}

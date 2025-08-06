@@ -1,0 +1,20 @@
+.primary-button {
+    width: 220px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #FF732B;
+    border: none;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    background-color: #F35714;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.14) inset;
+}
+
+.primary-button:active {
+    box-shadow: none;
+}
