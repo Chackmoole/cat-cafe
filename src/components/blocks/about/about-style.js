@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Plate } from "../../ui/plate/plate";
 import { Text } from "../../ui/text/text";
 import mark from "./../../../assests/svg/maps-and-flags1.svg";
 
@@ -18,7 +17,7 @@ export const StyledDescription = styled(Text)`
 	margin-bottom: 40px;
 `;
 
-export const StyledPlate = styled(Plate)`
+export const StyledAddress = styled(Text)`
 	position: relative;
 	padding-left: 20px;
 	&:before {

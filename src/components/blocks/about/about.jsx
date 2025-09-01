@@ -4,8 +4,8 @@ import { TextVariant } from "../../ui/text/text";
 import { TitleVariant } from "../../ui/title/title";
 import {
 	StyledAbout,
+	StyledAddress,
 	StyledDescription,
-	StyledPlate,
 	StyledTitle,
 } from "./about-style";
 
@@ -23,13 +23,10 @@ export const About = () => {
 					с&nbsp;ними.
 				</StyledDescription>
 				<Plate>Рабочее время с 8:00 до 23:00</Plate>
-				<StyledPlate
-					className="about__plate"
-					variant={TextVariant.normal}
-				>
+				<StyledAddress variant={TextVariant.normal}>
 					Санкт-Петербург, набережная реки Карповки, дом&nbsp;5,
 					литера&nbsp;П
-				</StyledPlate>
+				</StyledAddress>
 			</div>
 			<img
 				src={aboutPicture}
