@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StarCardStyled = styled.li`
+export const StyledStarCard = styled.li`
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -11,18 +11,18 @@ export const StarCardStyled = styled.li`
 	border-radius: 12px;
 `;
 
-export const StarCardImg = styled.img`
+export const StyledStarCardImg = styled.img`
 	display: block;
 	margin-bottom: 20px;
 	border-radius: 8px;
 `;
 
-export const StarCardTitle = styled.p`
+export const StyledStarCardTitle = styled.p`
 	margin: 0 0 12px;
 	font-size: 28px;
 	font-weight: bold;
 `;
 
-export const StarCardDescription = styled.p`
+export const StyledStarCardDescription = styled.p`
 	margin: 0;
 `;

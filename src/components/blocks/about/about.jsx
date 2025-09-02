@@ -1,13 +1,13 @@
-import aboutPicture from "../../../assests/img/about.png";
-import { Plate } from "../../ui/plate/plate";
-import { TextVariant } from "../../ui/text/text";
-import { TitleVariant } from "../../ui/title/title";
+import aboutPicture from '../../../assests/img/about.png';
+import { Plate } from '../../ui/plate/plate';
+import { TextVariant } from '../../ui/text/text';
+import { TitleVariant } from '../../ui/title/title';
 import {
 	StyledAbout,
 	StyledAddress,
 	StyledDescription,
 	StyledTitle,
-} from "./about-style";
+} from './about-styled';
 
 export const About = () => {
 	return (

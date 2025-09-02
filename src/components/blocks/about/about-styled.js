@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Text } from "../../ui/text/text";
-import mark from "./../../../assests/svg/maps-and-flags1.svg";
+import styled from 'styled-components';
+import { Text } from '../../ui/text/text';
+import mark from './../../../assests/svg/maps-and-flags1.svg';
 
 export const StyledAbout = styled.section`
 	display: flex;

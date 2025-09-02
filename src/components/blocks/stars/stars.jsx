@@ -1,12 +1,15 @@
-import './stars-style.css';
-import { Title, TitleVariant } from '../../ui/title/title';
-import { StarsList } from '../stars-list/stars-list';
 import { Button } from '../../ui/button/button';
+import { TitleVariant } from '../../ui/title/title';
+import { StarsList } from '../stars-list/stars-list';
+import './stars-style.css';
+import { StyledStars, StyledStarsTitle } from './stars-styled';
 
-export const Stars = () => { 
-    return <section className='stars'>
-    <Title variant={TitleVariant.h2} className='stars__title'>Наши звезды</Title>
-    <StarsList />
-    <Button minWidth='353px'>Купить билет</Button>
-    </section>
-}
+export const Stars = () => {
+	return (
+		<StyledStars>
+			<StyledStarsTitle variant={TitleVariant.h2}>Наши звезды</StyledStarsTitle>
+			<StarsList />
+			<Button minWidth='353px'>Купить билет</Button>
+		</StyledStars>
+	);
+};
