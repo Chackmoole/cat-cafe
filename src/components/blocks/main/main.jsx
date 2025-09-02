@@ -1,10 +1,12 @@
-import './main-style.css';
-import { About } from '../about/about';
-import { Stars } from '../stars/stars';
+import { About } from "../about/about";
+import { Stars } from "../stars/stars";
+import { StyledMain } from "./main-style";
 
-export const Main = () => { 
-    return <main className='main'>
-        <About />
-        <Stars/>
-    </main>
-}
+export const Main = () => {
+	return (
+		<StyledMain>
+			<About />
+			<Stars />
+		</StyledMain>
+	);
+};

@@ -11,29 +11,22 @@ import {
 
 export const About = () => {
 	return (
-		<StyledAbout className="about">
+		<StyledAbout>
 			<div>
 				<StyledTitle variant={TitleVariant.h1}>
 					Первое в России котокафе
 				</StyledTitle>
 				<StyledDescription variant={TextVariant.normal}>
-					Крупнейшее котокафе России, в&nbsp;котором живёт
-					50&nbsp;кошек и&nbsp;котов, и&nbsp;каждый из&nbsp;них ищет
-					новый дом. Животных можно гладить, фотографировать, играть
-					с&nbsp;ними.
+					Крупнейшее котокафе России, в&nbsp;котором живёт 50&nbsp;кошек
+					и&nbsp;котов, и&nbsp;каждый из&nbsp;них ищет новый дом. Животных можно
+					гладить, фотографировать, играть с&nbsp;ними.
 				</StyledDescription>
 				<Plate>Рабочее время с 8:00 до 23:00</Plate>
 				<StyledAddress variant={TextVariant.normal}>
-					Санкт-Петербург, набережная реки Карповки, дом&nbsp;5,
-					литера&nbsp;П
+					Санкт-Петербург, набережная реки Карповки, дом&nbsp;5, литера&nbsp;П
 				</StyledAddress>
 			</div>
-			<img
-				src={aboutPicture}
-				alt="Отдых с котом"
-				width={446}
-				height={446}
-			/>
+			<img src={aboutPicture} alt='Отдых с котом' width={446} height={446} />
 		</StyledAbout>
 	);
 };
