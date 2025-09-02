@@ -1,7 +1,6 @@
 import { Button } from '../../ui/button/button';
 import { TitleVariant } from '../../ui/title/title';
 import { StarsList } from '../stars-list/stars-list';
-import './stars-style.css';
 import { StyledStars, StyledStarsTitle } from './stars-styled';
 
 export const Stars = () => {

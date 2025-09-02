@@ -1,6 +1,10 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -17,7 +21,7 @@ body {
   font-size: ${(props) => props.theme.fontSizeDefault};
   line-height: 27px;
   font-weight: 400;
-  color: ${(props => props.theme.colorBlackForText)};
+  color: ${(props) => props.theme.colorBlackForText};
 }
 
 .visually-hidden {
