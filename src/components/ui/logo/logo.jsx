@@ -1,9 +1,11 @@
-import logo from "../../../assests/svg/logo.svg";
-import './logo-style.css';
+import logo from '../../../assests/svg/logo.svg';
+import { StyledLogo, StyledLogoImg } from './logo-styled';
 
-export const Logo = () => { 
-    return <a className="logo" href="public\index.html">
-        <img src={logo} alt="Котокафе" />
-        <span>Котокафе</span>
-    </a>
-}
+export const Logo = () => {
+	return (
+		<StyledLogo href='public\index.html'>
+			<StyledLogoImg src={logo} alt='Котокафе' />
+			<span>Котокафе</span>
+		</StyledLogo>
+	);
+};
