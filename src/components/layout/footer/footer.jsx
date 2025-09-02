@@ -1,6 +1,6 @@
 import { Copyrigth } from '../../ui/copyrigth/copyrigth';
 import { Logo } from '../../ui/logo/logo';
-import { StyledFooter } from './footer-style';
+import { StyledFooter } from './footer-styled';
 
 export const Footer = () => {
 	return (
