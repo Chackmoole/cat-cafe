@@ -1,11 +1,22 @@
-import './star-card-style.css';
 import { StarIcon, StarIcons } from '../../ui/star-icon/star-icon';
+import {
+	StarCardDescription,
+	StarCardImg,
+	StarCardStyled,
+	StarCardTitle,
+} from './star-card-style';
 
-export const StarCard = ({ src, title, text, icon }) => {     
-    return <li className='star-card'>
-        <img className='star-card__pic' src={src} alt={src} width={313} height={313} />
-        <p className='star-card__title'>{title}</p>
-        <p className='star-card__description'>{text}</p>
-        {icon !== 'empty' ? <StarIcon variant={StarIcons[icon.toUpperCase()]}/>: ''}
-    </li>
-}
+export const StarCard = ({ src, title, text, icon }) => {
+	return (
+		<StarCardStyled>
+			<StarCardImg src={src} alt={src} width={313} height={313} />
+			<StarCardTitle>{title}</StarCardTitle>
+			<StarCardDescription>{text}</StarCardDescription>
+			{icon !== 'empty' ? (
+				<StarIcon variant={StarIcons[icon.toUpperCase()]} />
+			) : (
+				''
+			)}
+		</StarCardStyled>
+	);
+};
