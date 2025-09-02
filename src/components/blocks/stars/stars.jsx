@@ -8,7 +8,7 @@ export const Stars = () => {
 		<StyledStars>
 			<StyledStarsTitle variant={TitleVariant.h2}>Наши звезды</StyledStarsTitle>
 			<StarsList />
-			<Button minWidth='353px'>Купить билет</Button>
+			<Button minWidth='353'>Купить билет</Button>
 		</StyledStars>
 	);
 };
