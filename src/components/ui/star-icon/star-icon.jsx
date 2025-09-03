@@ -1,20 +1,16 @@
-import './star-icon-style.css';
-import { Text, TextVariant } from '../text/text';
+import { Text } from '../text/text.jsx';
+import './star-icon-styled.js';
+import { StyledStarIcon } from './star-icon-styled.js';
 
 export const StarIcons = {
-    NEW: 'new',
-    SOFT: 'soft'
+	NEW: 'new',
+	SOFT: 'soft',
 };
 
-export const StarIcon = ({variant}) => { 
-    let component;
-    switch (variant) { 
-        case 'new': component = <div className='star-icon star-icon--new'><Text variant={TextVariant.bold}>new</Text></div>
-            break;    
-        case 'soft': component = <div className='star-icon star-icon--soft'><Text variant={TextVariant.bold}>Ласковый</Text></div>
-            break;    
-        default: component = '';
-    }
-    return component
-}
-
+export const StarIcon = ({ variant }) => {
+	return (
+		<StyledStarIcon $variant={variant}>
+			<Text>{variant === StarIcons.NEW ? 'NEW' : 'ЛАСКОВЫЙ'}</Text>
+		</StyledStarIcon>
+	);
+};
