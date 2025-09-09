@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import { Text } from '../text/text';
 
-export const StyledPlate = styled.p`
+export const StyledPlate = styled(Text)`
 	display: inline-block;
-	margin: 0 0 20px;
 	padding: 8px;
 	background-color: ${(props) => props.theme.colorForDarkBackground};
 	border: 8px;

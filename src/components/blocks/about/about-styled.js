@@ -9,14 +9,6 @@ export const StyledAbout = styled.section`
 	padding: 78px 90px;
 `;
 
-export const StyledTitle = styled(Text)`
-	margin: 0 0 20px 0;
-`;
-
-export const StyledDescription = styled(Text)`
-	margin-bottom: 40px;
-`;
-
 export const StyledAddress = styled(Text)`
 	position: relative;
 	padding-left: 20px;

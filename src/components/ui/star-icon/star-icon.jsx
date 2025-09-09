@@ -7,10 +7,12 @@ export const StarIcons = {
 	SOFT: 'soft',
 };
 
-export const StarIcon = ({ variant }) => {
+export const StarIcon = ({ iconVariant }) => {
 	return (
-		<StyledStarIcon $variant={variant}>
-			<Text>{variant === StarIcons.NEW ? 'NEW' : 'ЛАСКОВЫЙ'}</Text>
+		<StyledStarIcon $iconVariant={iconVariant}>
+			<Text variant='subtitle2'>
+				{iconVariant === StarIcons.NEW ? 'NEW' : 'ЛАСКОВЫЙ'}
+			</Text>
 		</StyledStarIcon>
 	);
 };

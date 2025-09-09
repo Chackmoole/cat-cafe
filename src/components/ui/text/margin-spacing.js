@@ -7,34 +7,32 @@ export const marginSpacing = css`
 		if (props.$mt) {
 			console.log('mt');
 			return css`
-				margin-top: ${(props) => props.$mt + 'px'};
+				margin: ${(props) => props.$mt + 'px'} 0 0 0;
 			`;
 		} else if (props.$mr) {
 			console.log('mr');
 			return css`
-				margin-right: ${(props) => props.$mr + 'px'};
+				margin: 0 ${(props) => props.$mr + 'px'} 0 0;
 			`;
 		} else if (props.$mb) {
 			console.log('mb');
 			return css`
-				margin-bottom: ${(props) => props.$mb + 'px'};
+				margin: 0 0 ${(props) => props.$mb + 'px'} 0;
 			`;
 		} else if (props.$ml) {
 			console.log('ml');
 			return css`
-				margin-left: ${(props) => props.$ml + 'px'};
+				margin: 0 0 0 ${(props) => props.$ml + 'px'};
 			`;
 		} else if (props.$mx) {
 			console.log('mx');
 			return css`
-				margin-right: ${(props) => props.$mx + 'px'};
-				margin-left: ${(props) => props.$mx + 'px'};
+				margin: 0 ${(props) => props.$mx + 'px'};
 			`;
 		} else if (props.$my) {
 			console.log('my');
 			return css`
-				margin-top: ${(props) => props.$my + 'px'};
-				margin-bottom: ${(props) => props.$my + 'px'};
+				margin: ${(props) => props.$my + 'px'} 0;
 			`;
 		} else if (props.$m) {
 			console.log('$	m');

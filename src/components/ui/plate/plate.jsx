@@ -1,5 +1,9 @@
 import { StyledPlate } from './plate-styled';
 
-export const Plate = ({ children, className = '' }) => {
-	return <StyledPlate>{children}</StyledPlate>;
+export const Plate = ({ children, ...props }) => {
+	return (
+		<StyledPlate mb={20} {...props}>
+			{children}
+		</StyledPlate>
+	);
 };

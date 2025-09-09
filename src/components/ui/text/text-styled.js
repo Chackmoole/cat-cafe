@@ -26,9 +26,15 @@ export const StyledText = styled.span`
 				`;
 			case 'subtitle1':
 				return css`
+					font-size: 28px;
+					line-height: 150%;
+					font-weight: 700;
+				`;
+			case 'subtitle2':
+				return css`
 					font-size: 18px;
 					line-height: 150%;
-					font-weight: 800;
+					font-weight: 700;
 				`;
 			case 'body1':
 				return css`

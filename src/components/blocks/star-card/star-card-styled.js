@@ -16,13 +16,3 @@ export const StyledStarCardImg = styled.img`
 	margin-bottom: 20px;
 	border-radius: 8px;
 `;
-
-export const StyledStarCardTitle = styled.p`
-	margin: 0 0 12px;
-	font-size: 28px;
-	font-weight: bold;
-`;
-
-export const StyledStarCardDescription = styled.p`
-	margin: 0;
-`;

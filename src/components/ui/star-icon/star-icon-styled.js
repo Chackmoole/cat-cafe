@@ -8,7 +8,7 @@ export const StyledStarIcon = styled.div`
 	color: ${(props) => props.theme.colorWhite};
 
 	background-color: ${(props) =>
-		props.$variant === 'new'
+		props.$iconVariant === 'new'
 			? props.theme.colorForNewIcon
 			: props.theme.colorForSoftIcon};
 
