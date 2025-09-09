@@ -1,5 +1,5 @@
 import { css, default as styled } from 'styled-components';
-import { spacing } from './spacing';
+import { marginSpacing } from './margin-spacing';
 
 export const StyledText = styled.span`
 	font-family: ${(props) => props.theme.fontFamily};
@@ -51,5 +51,6 @@ export const StyledText = styled.span`
 		}
 	}}
 
-	margin: ${spacing};
+	//margin
+	${marginSpacing}
 `;

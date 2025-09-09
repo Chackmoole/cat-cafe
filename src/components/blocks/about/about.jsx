@@ -1,21 +1,13 @@
 import aboutPicture from '../../../assests/img/about.png';
 import { Plate } from '../../ui/plate/plate';
-import { TextVariant } from '../../ui/text/text';
-import { TitleVariant } from '../../ui/title/title';
-import {
-	StyledAbout,
-	StyledAddress,
-	StyledDescription,
-	StyledTitle,
-} from './about-styled';
+import { Text2, TextVariant } from '../../ui/text/text';
+import { StyledAbout, StyledAddress, StyledDescription } from './about-styled';
 
 export const About = () => {
 	return (
 		<StyledAbout>
 			<div>
-				<StyledTitle variant={TitleVariant.h1}>
-					Первое в России котокафе
-				</StyledTitle>
+				<Text2 variant='h1'>Первое в России котокафе</Text2>
 				<StyledDescription variant={TextVariant.normal}>
 					Крупнейшее котокафе России, в&nbsp;котором живёт 50&nbsp;кошек
 					и&nbsp;котов, и&nbsp;каждый из&nbsp;них ищет новый дом. Животных можно

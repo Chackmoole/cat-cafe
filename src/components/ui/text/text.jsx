@@ -27,11 +27,29 @@ const defaultVariantMapping = {
 	body2: 'p',
 };
 
-export const Text2 = ({ children, variant = 'body', ...props }) => {
+export const Text2 = ({
+	children,
+	variant = 'body',
+	m,
+	mx,
+	my,
+	mt,
+	mr,
+	mb,
+	ml,
+	...props
+}) => {
 	return (
 		<StyledText
 			$variant={variant}
 			as={defaultVariantMapping[variant]}
+			$m={m}
+			$mx={mx}
+			$my={my}
+			$mt={mt}
+			$mr={mr}
+			$mb={mb}
+			$ml={ml}
 			{...props}
 		>
 			{children}
