@@ -5,7 +5,7 @@ import { StyledStars, StyledStarsTitle } from './stars-styled';
 export const Stars = () => {
 	return (
 		<StyledStars>
-			<StyledStarsTitle variant='h2' mb='64'>
+			<StyledStarsTitle variant='h2' mb={64}>
 				Наши звезды
 			</StyledStarsTitle>
 			<StarsList />

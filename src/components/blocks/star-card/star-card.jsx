@@ -6,7 +6,7 @@ export const StarCard = ({ src, title, text, icon }) => {
 	return (
 		<StyledStarCard>
 			<StyledStarCardImg src={src} alt={src} width={313} height={313} />
-			<Text variant='subtitle1' mb='12'>
+			<Text variant='subtitle1' mb={12}>
 				{title}
 			</Text>
 			<Text variant='body1'>{text}</Text>

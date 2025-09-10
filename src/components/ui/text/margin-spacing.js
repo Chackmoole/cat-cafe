@@ -2,38 +2,58 @@ import { css } from 'styled-components';
 
 export const marginSpacing = css`
 	${(props) => {
-		if (props.$mt) {
-			return css`
-				margin: ${(props) => props.$mt + 'px'} 0 0 0;
-			`;
-		} else if (props.$mr) {
-			return css`
-				margin: 0 ${(props) => props.$mr + 'px'} 0 0;
-			`;
-		} else if (props.$mb) {
-			return css`
-				margin: 0 0 ${(props) => props.$mb + 'px'} 0;
-			`;
-		} else if (props.$ml) {
-			return css`
-				margin: 0 0 0 ${(props) => props.$ml + 'px'};
-			`;
-		} else if (props.$mx) {
-			return css`
-				margin: 0 ${(props) => props.$mx + 'px'};
-			`;
-		} else if (props.$my) {
-			return css`
-				margin: ${(props) => props.$my + 'px'} 0;
-			`;
-		} else if (props.$m) {
+		if (typeof props.$m === 'number') {
 			return css`
 				margin: ${(props) => props.$m + 'px'};
 			`;
 		} else {
 			return css`
-			margin: 0};
+				margin: 0;
 			`;
 		}
-	}};
+	}}
+	${(props) => {
+		if (typeof props.$my === 'number') {
+			return css`
+				margin-top: ${(props) => props.$my + 'px'};
+				margin-bottom: ${(props) => props.$my + 'px'};
+			`;
+		}
+	}}
+	${(props) => {
+		if (typeof props.$mx === 'number') {
+			return css`
+				margin-left: ${(props) => props.$mx + 'px'};
+				margin-right: ${(props) => props.$mx + 'px'};
+			`;
+		}
+	}}
+	${(props) => {
+		if (typeof props.$mt === 'number') {
+			return css`
+				margin-top: ${(props) => props.$mt + 'px'};
+			`;
+		}
+	}}
+	${(props) => {
+		if (typeof props.$mr === 'number') {
+			return css`
+				margin-right: ${(props) => props.$mr + 'px'};
+			`;
+		}
+	}}
+	${(props) => {
+		if (typeof props.$mb === 'number') {
+			return css`
+				margin-bottom: ${(props) => props.$mb + 'px'};
+			`;
+		}
+	}}
+	${(props) => {
+		if (typeof props.$ml === 'number') {
+			return css`
+				margin-left: ${(props) => props.$ml + 'px'};
+			`;
+		}
+	}}
 `;
