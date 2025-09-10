@@ -1,4 +1,3 @@
-import './text-style.css';
 import './text-styled.js';
 import { StyledText } from './text-styled.js';
 
