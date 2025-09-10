@@ -2,7 +2,7 @@ import { css, default as styled } from 'styled-components';
 import { marginSpacing } from './margin-spacing';
 
 export const StyledText = styled.span`
-	font-family: ${(props) => props.theme.fontFamily};
+	font-family: ${(props) => props.theme.FONTS.fontFamily};
 
 	${({ $variant }) => {
 		switch ($variant) {
@@ -32,13 +32,13 @@ export const StyledText = styled.span`
 				`;
 			case 'subtitle2':
 				return css`
-					font-size: 18px;
+					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 700;
 				`;
 			case 'body1':
 				return css`
-					font-size: 18px;
+					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 400;
 				`;
@@ -50,7 +50,7 @@ export const StyledText = styled.span`
 				`;
 			default:
 				return css`
-					font-size: 18px;
+					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 400;
 				`;

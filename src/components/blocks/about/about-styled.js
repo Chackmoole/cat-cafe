@@ -5,7 +5,7 @@ import mark from './../../../assests/svg/maps-and-flags1.svg';
 export const StyledAbout = styled.section`
 	display: flex;
 	align-items: center;
-	background-color: ${(props) => props.theme.colorForLightBackground};
+	background-color: ${(props) => props.theme.COLORS.colorForLightBackground};
 	padding: 78px 90px;
 `;
 
