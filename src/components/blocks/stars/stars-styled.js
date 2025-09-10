@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Title } from '../../ui/title/title';
 import starsCatPaw from './../../../assests/svg/cat-paw.svg';
 import starsBgLeaves from './../../../assests/svg/stars-bg-leaves.svg';
 import starsBgSpot from './../../../assests/svg/stars-bg-spot.svg';
+import { Text } from '../../ui/text/text';
 
 export const StyledStars = styled.section`
 	position: relative;
@@ -27,7 +27,7 @@ export const StyledStars = styled.section`
 	}
 `;
 
-export const StyledStarsTitle = styled(Title)`
+export const StyledStarsTitle = styled(Text)`
 	position: relative;
 	margin-bottom: 64px;
 	width: 100%;
