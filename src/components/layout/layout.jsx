@@ -1,11 +1,13 @@
-import { Header } from './header/header'
-import { Footer } from './footer/footer'
-import './layout-style.css'
+import { Footer } from './footer/footer';
+import { Header } from './header/header';
+import { StyledLayout } from './layout-styled';
 
-export const Layout = ({ children } ) => { 
-    return <div className='layout'>
-        <Header />
-        { children } 
-        <Footer/>
-    </div>
-}
+export const Layout = ({ children }) => {
+	return (
+		<StyledLayout>
+			<Header />
+			{children}
+			<Footer />
+		</StyledLayout>
+	);
+};

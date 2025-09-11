@@ -1,10 +1,12 @@
-import './footer-style.css';
-import { Logo } from '../../ui/logo/logo';
 import { Copyrigth } from '../../ui/copyrigth/copyrigth';
+import { Logo } from '../../ui/logo/logo';
+import { StyledFooter } from './footer-styled';
 
-export const Footer = () => { 
-    return <footer className='footer'>
-        <Logo />
-        <Copyrigth/>
-    </footer>
-}
+export const Footer = () => {
+	return (
+		<StyledFooter>
+			<Logo />
+			<Copyrigth />
+		</StyledFooter>
+	);
+};
