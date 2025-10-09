@@ -1,6 +1,6 @@
 import {StyledGallery} from './gallery-styled';
 
-export const Gallary = () => {
+export const Gallery = () => {
     return (
         <StyledGallery></StyledGallery>
     )
