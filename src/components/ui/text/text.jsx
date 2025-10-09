@@ -13,7 +13,7 @@ const defaultVariantMapping = {
 
 export const Text = ({
 	children,
-	variant = 'body',
+	variant = 'body1',
 	m,
 	mx,
 	my,

@@ -1,5 +1,5 @@
 export const defaultTheme = {
-	COLORS: {
+	colors: {
 		colorBlackForText: '#333333',
 		colorWhite: '#ffffff',
 		colorForLightBackground: '#fff6d9',
@@ -7,13 +7,13 @@ export const defaultTheme = {
 		colorForNewIcon: '#ffb334',
 		colorForSoftIcon: '#7fc92e',
 		colorForButton: '#ff732B',
-		colorForButtonHover: '#F35714',
+		colorForButtonHover: '#f35714',
 	},
 
-	FONTS: {
+	fonts: {
 		fontFamily: '"Inter", "Arial", sans-serif',
 		fontSizeDefault: '18px',
 	},
 
-	SIZES: { pageWidth: '1280px' },
+	sizes: { pageWidth: '1280px' },
 };

@@ -6,7 +6,7 @@ export const StyledLogo = styled.a`
 	font-size: 28px;
 	font-weight: bold;
 	text-decoration: none;
-	color: ${(props) => props.theme.COLORS.colorBlackForText};
+	color: ${(props) => props.theme.colors.colorBlackForText};
 `;
 
 export const StyledLogoImg = styled.img`

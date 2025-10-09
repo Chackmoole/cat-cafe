@@ -29,13 +29,13 @@ export const textVariant = css`
 				`;
 			case 'subtitle2':
 				return css`
-					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
+					font-size: ${(props) => props.theme.fonts.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 700;
 				`;
 			case 'body1':
 				return css`
-					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
+					font-size: ${(props) => props.theme.fonts.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 400;
 				`;
@@ -47,7 +47,7 @@ export const textVariant = css`
 				`;
 			default:
 				return css`
-					font-size: ${(props) => props.theme.FONTS.fontSizeDefault};
+					font-size: ${(props) => props.theme.fonts.fontSizeDefault};
 					line-height: 150%;
 					font-weight: 400;
 				`;

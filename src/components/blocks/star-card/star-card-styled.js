@@ -7,7 +7,7 @@ export const StyledStarCard = styled.li`
 	padding: 20px;
 	width: 353px;
 	min-height: 525px;
-	background-color: ${(props) => props.theme.COLORS.colorWhite};
+	background-color: ${(props) => props.theme.colors.colorWhite};
 	border-radius: 12px;
 `;
 

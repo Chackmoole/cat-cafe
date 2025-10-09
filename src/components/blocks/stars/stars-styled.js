@@ -9,7 +9,7 @@ export const StyledStars = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: ${(props) => props.theme.COLORS.colorForDarkBackground};
+	background-color: ${(props) => props.theme.colors.colorForDarkBackground};
 	padding: 100px 90px 80px;
 
 	&:before {
