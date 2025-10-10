@@ -1,12 +1,11 @@
-import { StyledGallery } from "./gallery-styled";
-import { Text } from "../../ui/text/text";
+import { StyledGallery, StyledGalleryTitle } from "./gallery-styled";
 
 export const Gallery = () => {
   return (
     <StyledGallery>
-      <Text variant="h1" mb={64}>
+      <StyledGalleryTitle variant="h1" mb={64}>
         Галерея нашего кафе
-      </Text>
+      </StyledGalleryTitle>
     </StyledGallery>
   );
 };
