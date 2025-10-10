@@ -5,4 +5,5 @@ export const StyledGallery = styled.section`;
   flex-direction: column;
   align-items: center;
   background-color: ${(props) => props.theme.colors.colorForDarkBackground};
+  padding: 80px 70px 100px;
 `
