@@ -1,8 +1,16 @@
 import styled from "styled-components";
+import orderSpotBg from "../../../assests/svg/order-bg-spot.svg";
 
 export const StyledOrder = styled.section`
-  height: 100px;
+  position: relative;
   background-color: ${(props) => props.theme.colors.colorForLightBackground};
   padding: 100px 70px;
-  outline: 2px solid blue;
+  min-height: 550px;
+
+  &:before {
+    content: ${`url(${orderSpotBg})`};
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 `;
