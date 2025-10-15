@@ -8,6 +8,7 @@ export const defaultTheme = {
     colorForSoftIcon: "#7fc92e",
     colorForButton: "#ff732B",
     colorForButtonHover: "#f35714",
+    colorGreyForOrder: "#f6f6f6",
   },
 
   fonts: {

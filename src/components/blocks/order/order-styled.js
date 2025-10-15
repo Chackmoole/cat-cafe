@@ -24,6 +24,10 @@ export const StyledOrder = styled.section`
 
 export const StyledOrderBox = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
-export const StyledOrderImg = styled.img``;
+export const StyledOrderImg = styled.img`
+  z-index: 2;
+  padding-top: 102px;
+`;
