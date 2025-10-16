@@ -9,9 +9,20 @@ export const StyledOrderCard = styled.article`
   z-index: 2;
 `;
 
+export const StyledOrderForm = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const StyledOrderLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const StyledOrderDurationBox = styled.div`
   display: flex;
   gap: 12px;
+  margin-bottom: 24px;
 `;
 
 export const StyledOrderDurationInner = styled.div`

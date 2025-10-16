@@ -4,17 +4,20 @@ import {
   StyledOrderDurationButton,
   StyledOrderDurationInner,
   StyledOrderDurationLabel,
+  StyledOrderForm,
+  StyledOrderLayout,
 } from "./order-card-styled";
 import { Text } from "../../ui/text/text";
+import { Accordion } from "../../ui/accordion/accordion";
 
 export const OrderCard = () => {
   return (
     <StyledOrderCard>
-      <Text variant="subtitle2" mb={12}>
-        Продолжительность (часов)
-      </Text>
-      <div>
-        <form>
+      <StyledOrderForm>
+        <StyledOrderLayout>
+          <Text variant="subtitle2" mb={12}>
+            Продолжительность (часов)
+          </Text>
           <StyledOrderDurationBox>
             <StyledOrderDurationInner>
               <StyledOrderDurationButton
@@ -41,8 +44,12 @@ export const OrderCard = () => {
               <StyledOrderDurationLabel htmlFor="">5</StyledOrderDurationLabel>
             </StyledOrderDurationInner>
           </StyledOrderDurationBox>
-        </form>
-      </div>
+          <Text variant="subtitle2" mb={12}>
+            Тип билета
+          </Text>
+          <Accordion />
+        </StyledOrderLayout>
+      </StyledOrderForm>
     </StyledOrderCard>
   );
 };
