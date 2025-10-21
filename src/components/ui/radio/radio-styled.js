@@ -7,6 +7,7 @@ export const StyledRadio = styled.input`
   height: 18px;
   border-radius: 50%;
   border: 1px solid ${(props) => props.theme.colors.colorForButton};
+  margin: 0;
 
   &:checked:before {
     content: "";

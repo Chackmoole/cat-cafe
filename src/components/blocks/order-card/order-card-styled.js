@@ -53,3 +53,9 @@ export const StyledOrderDurationButton = styled.input`
     color: ${(props) => props.theme.colors.colorWhite};
   }
 `;
+
+export const StyledOrderTicketType = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;

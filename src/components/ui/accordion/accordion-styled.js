@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import arrowElement from "../../../assests/svg/accordion-arrow.svg";
+import { Radio } from "../radio/radio";
 
 export const StyledAccordion = styled.div`
   position: relative;
@@ -18,4 +19,8 @@ export const StyledAccordion = styled.div`
     top: 55%;
     transform: translateY(-50%);
   }
+`;
+
+export const StyledAccordionRadio = styled(Radio)`
+  margin-right: 8px;
 `;

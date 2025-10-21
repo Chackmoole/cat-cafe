@@ -6,6 +6,7 @@ import {
   StyledOrderDurationLabel,
   StyledOrderForm,
   StyledOrderLayout,
+  StyledOrderTicketType,
 } from "./order-card-styled";
 import { Text } from "../../ui/text/text";
 import { Accordion } from "../../ui/accordion/accordion";
@@ -47,7 +48,10 @@ export const OrderCard = () => {
           <Text variant="subtitle2" mb={12}>
             Тип билета
           </Text>
-          <Accordion />
+          <StyledOrderTicketType>
+            <Accordion isRadio={true}>Стандартный</Accordion>
+            <Accordion isRadio={false}>VIP</Accordion>
+          </StyledOrderTicketType>
         </StyledOrderLayout>
       </StyledOrderForm>
     </StyledOrderCard>

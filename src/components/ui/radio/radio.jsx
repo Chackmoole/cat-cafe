@@ -1,5 +1,5 @@
 import { StyledRadio } from "./radio-styled";
 
-export const Radio = () => {
-  return <StyledRadio type="radio" />;
+export const Radio = ({ ...props }) => {
+  return <StyledRadio type="radio" {...props} />;
 };
