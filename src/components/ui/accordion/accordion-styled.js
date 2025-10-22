@@ -3,13 +3,19 @@ import arrowElement from "../../../assests/svg/accordion-arrow.svg";
 import { Radio } from "../radio/radio";
 
 export const StyledAccordion = styled.div`
-  position: relative;
-  width: 460px;
-  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  background-color: ${(props) => props.theme.colors.colorGreyForOrder};
   padding: 10px 20px;
+  min-height: 48px;
+  width: 460px;
+  border-radius: 10px;
+`;
+
+export const StyledAccordionHeader = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.colorGreyForOrder};
   border-radius: 10px;
 
   &:after {
