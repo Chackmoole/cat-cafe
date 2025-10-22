@@ -1,4 +1,8 @@
-import { StyledAccordion, StyledAccordionHeader, StyledAccordionRadio, } from "./accordion-styled";
+import {
+  StyledAccordion,
+  StyledAccordionHeader,
+  StyledAccordionRadio,
+} from "./accordion-styled";
 import { Text } from "../text/text";
 import { AccordionList } from "../accordion-list/accordion-list";
 
