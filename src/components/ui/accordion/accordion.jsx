@@ -1,28 +1,10 @@
-import {
-  StyledAccordion,
-  StyledAccordionHeader,
-  StyledAccordionRadio,
-} from "./accordion-styled";
-import { Text } from "../text/text";
-import { AccordionList } from "../accordion-list/accordion-list";
+import { StyledAccordion } from "./accordion-styled";
+import { AccordionHeader } from "../accordion-header/accordion-header";
 
 export const Accordion = (props) => {
-  if (props.isRadio) {
-    return (
-      <StyledAccordion>
-        <StyledAccordionHeader>
-          <StyledAccordionRadio />
-          <Text as="label">{props.children}</Text>
-        </StyledAccordionHeader>
-      </StyledAccordion>
-    );
-  }
   return (
     <StyledAccordion>
-      <StyledAccordionHeader>
-        <Text>{props.children}</Text>
-      </StyledAccordionHeader>
-      <AccordionList />
+      <AccordionHeader {...props}></AccordionHeader>
     </StyledAccordion>
   );
 };

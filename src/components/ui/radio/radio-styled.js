@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { marginSpacing } from "./margin-spacing";
 
 export const StyledRadio = styled.input`
   position: relative;
@@ -7,7 +8,7 @@ export const StyledRadio = styled.input`
   height: 18px;
   border-radius: 50%;
   border: 1px solid ${(props) => props.theme.colors.colorForButton};
-  margin: 0;
+  ${marginSpacing};
 
   &:checked:before {
     content: "";

@@ -10,6 +10,9 @@ import {
 } from "./order-card-styled";
 import { Text } from "../../ui/text/text";
 import { Accordion } from "../../ui/accordion/accordion";
+import { Radio } from "../../ui/radio/radio";
+
+//TODO вынести блок кнопок
 
 export const OrderCard = () => {
   return (
@@ -49,8 +52,10 @@ export const OrderCard = () => {
             Тип билета
           </Text>
           <StyledOrderTicketType>
-            <Accordion isRadio={true}>Стандартный</Accordion>
-            <Accordion isRadio={false}>VIP</Accordion>
+            <Accordion headerText="1" headerContent={<Radio mr={8} />}>
+              Стандартный
+            </Accordion>
+            <Accordion headerText="2">VIP</Accordion>
           </StyledOrderTicketType>
         </StyledOrderLayout>
       </StyledOrderForm>
