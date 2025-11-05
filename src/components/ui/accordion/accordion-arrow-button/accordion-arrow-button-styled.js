@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import arrowImg from "../../../assests/svg/accordion-arrow.svg";
+import arrowImg from "../../../../assests/svg/accordion-arrow.svg";
 
 export const StyledAccordionArrowButton = styled.button`
   width: 28px;

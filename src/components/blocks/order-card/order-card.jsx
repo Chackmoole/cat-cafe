@@ -11,6 +11,8 @@ import {
 import { Text } from "../../ui/text/text";
 import { Accordion } from "../../ui/accordion/accordion";
 import { Radio } from "../../ui/radio/radio";
+import { ItemList } from "../../ui/item-list/item-list";
+import { vipFeatures } from "../../../mocks/VIP-features-list";
 
 //TODO вынести блок кнопок
 
@@ -52,10 +54,22 @@ export const OrderCard = () => {
             Тип билета
           </Text>
           <StyledOrderTicketType>
-            <Accordion headerText="1" headerContent={<Radio mr={8} />}>
-              Стандартный
-            </Accordion>
-            <Accordion headerText="2">VIP</Accordion>
+            <Accordion
+              headerText="Стандартный"
+              headerContent={
+                <Radio
+                  mr={8}
+                  name="ticketType"
+                  value="standart"
+                  defaultChecked
+                />
+              }
+            />
+            <Accordion
+              headerText="VIP"
+              headerContent={<Radio mr={8} name="ticketType" value="VIP" />}
+              accordionBody={<ItemList data={vipFeatures} />}
+            />
           </StyledOrderTicketType>
         </StyledOrderLayout>
       </StyledOrderForm>
