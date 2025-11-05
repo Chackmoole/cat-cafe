@@ -1,9 +1,6 @@
 import {
   StyledOrderCard,
   StyledOrderDurationBox,
-  StyledOrderDurationButton,
-  StyledOrderDurationInner,
-  StyledOrderDurationLabel,
   StyledOrderForm,
   StyledOrderLayout,
   StyledOrderTicketType,
@@ -13,8 +10,8 @@ import { Accordion } from "../../ui/accordion/accordion";
 import { Radio } from "../../ui/radio/radio";
 import { ItemList } from "../../ui/item-list/item-list";
 import { vipFeatures } from "../../../mocks/VIP-features-list";
-
-//TODO вынести блок кнопок
+import { DurationHours } from "../duration-hours/duration-hours";
+import { duration } from "../../../mocks/duration-hours";
 
 export const OrderCard = () => {
   return (
@@ -25,30 +22,7 @@ export const OrderCard = () => {
             Продолжительность (часов)
           </Text>
           <StyledOrderDurationBox>
-            <StyledOrderDurationInner>
-              <StyledOrderDurationButton
-                type="radio"
-                name="duration"
-                defaultChecked
-              />
-              <StyledOrderDurationLabel htmlFor="">1</StyledOrderDurationLabel>
-            </StyledOrderDurationInner>
-            <StyledOrderDurationInner>
-              <StyledOrderDurationButton type="radio" name="duration" />
-              <StyledOrderDurationLabel htmlFor="">2</StyledOrderDurationLabel>
-            </StyledOrderDurationInner>
-            <StyledOrderDurationInner>
-              <StyledOrderDurationButton type="radio" name="duration" />
-              <StyledOrderDurationLabel htmlFor="">3</StyledOrderDurationLabel>
-            </StyledOrderDurationInner>
-            <StyledOrderDurationInner>
-              <StyledOrderDurationButton type="radio" name="duration" />
-              <StyledOrderDurationLabel htmlFor="">4</StyledOrderDurationLabel>
-            </StyledOrderDurationInner>
-            <StyledOrderDurationInner>
-              <StyledOrderDurationButton type="radio" name="duration" />
-              <StyledOrderDurationLabel htmlFor="">5</StyledOrderDurationLabel>
-            </StyledOrderDurationInner>
+            <DurationHours data={duration} />
           </StyledOrderDurationBox>
           <Text variant="subtitle2" mb={12}>
             Тип билета
