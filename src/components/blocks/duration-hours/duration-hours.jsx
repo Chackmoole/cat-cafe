@@ -15,6 +15,7 @@ export const DurationHours = ({ data }) => {
               type={item.type}
               name={item.name}
               defaultChecked={item.defaultChecked}
+              value={item.value}
             />
             <StyledDurationLabel>{item.value}</StyledDurationLabel>
           </StyledDurationInner>

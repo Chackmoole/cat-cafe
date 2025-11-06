@@ -7,7 +7,7 @@ export const AccordionHeader = (props) => {
     <StyledAccordionHeader>
       {props.headerContent}
       <Text>{props.headerText}</Text>
-      <StyledAccordionArrowButton />
+      <StyledAccordionArrowButton type="button" />
     </StyledAccordionHeader>
   );
 };
