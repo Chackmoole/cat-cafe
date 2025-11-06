@@ -1,12 +1,14 @@
-import { About } from '../about/about';
-import { Stars } from '../stars/stars';
-import { StyledMain } from './main-styled';
+import { About } from "../about/about";
+import { Stars } from "../stars/stars";
+import { StyledMain } from "./main-styled";
+import { Promo } from "../promo/promo";
 
 export const Main = () => {
-	return (
-		<StyledMain>
-			<About />
-			<Stars />
-		</StyledMain>
-	);
+  return (
+    <StyledMain>
+      <Promo />
+      <About />
+      <Stars />
+    </StyledMain>
+  );
 };

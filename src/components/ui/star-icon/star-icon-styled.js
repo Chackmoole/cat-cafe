@@ -5,12 +5,12 @@ export const StyledStarIcon = styled.div`
 	top: 0;
 	left: 0;
 	padding: 8px 16px;
-	color: ${(props) => props.theme.COLORS.colorWhite};
+	color: ${(props) => props.theme.colors.colorWhite};
 
 	background-color: ${(props) =>
 		props.$iconVariant === 'new'
-			? props.theme.COLORS.colorForNewIcon
-			: props.theme.COLORS.colorForSoftIcon};
+			? props.theme.colors.colorForNewIcon
+			: props.theme.colors.colorForSoftIcon};
 
 	min-width: 20px;
 	min-height: 20px;

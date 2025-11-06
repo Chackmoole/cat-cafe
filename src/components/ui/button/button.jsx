@@ -1,7 +1,9 @@
-import { StyledPrimaryButton } from './button-styled';
+import { StyledPrimaryButton } from "./button-styled";
 
-export const Button = ({ children, minWidth }) => {
-	return (
-		<StyledPrimaryButton $minWidth={minWidth}>{children}</StyledPrimaryButton>
-	);
+export const Button = ({ children, minWidth = 44, ...props }) => {
+  return (
+    <StyledPrimaryButton $minWidth={minWidth} {...props}>
+      {children}
+    </StyledPrimaryButton>
+  );
 };
