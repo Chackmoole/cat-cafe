@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../../ui/button/button";
 
 export const StyledOrderCard = styled.article`
   width: 540px;
@@ -27,4 +28,9 @@ export const StyledOrderTicketType = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 24px;
+`;
+
+export const StyledOrderBuyButton = styled(Button)`
+  width: 100%;
 `;
