@@ -34,6 +34,7 @@ export const OrderCard = () => {
           </Text>
           <StyledOrderTicketType>
             <Accordion
+              onClick={() => console.log(`1`)}
               headerText="Стандартный"
               headerContent={
                 <Radio
