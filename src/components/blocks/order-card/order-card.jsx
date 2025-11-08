@@ -62,7 +62,7 @@ export const OrderCard = () => {
                 <Radio
                   mr={8}
                   name="ticketType"
-                  value="VIP"
+                  value="vip"
                   onChange={handleTicketTypeChange}
                 />
               }
@@ -73,7 +73,7 @@ export const OrderCard = () => {
             Цена
           </Text>
           <Text variant="h4" mb={40}>
-            {priceList.standart} руб.
+            {priceList[ticketTypeValue] * durationValue} руб.
           </Text>
           <StyledOrderBuyButton>Купить билет</StyledOrderBuyButton>
         </StyledOrderLayout>
