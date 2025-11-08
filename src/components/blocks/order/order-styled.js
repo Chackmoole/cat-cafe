@@ -25,6 +25,7 @@ export const StyledOrder = styled.section`
 export const StyledOrderBox = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: start;
 `;
 
 export const StyledOrderImg = styled.img`
