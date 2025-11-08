@@ -14,8 +14,19 @@ import { vipFeatures } from "../../../mocks/VIP-features-list";
 import { DurationHours } from "../duration-hours/duration-hours";
 import { duration } from "../../../mocks/duration-hours";
 import { priceList } from "../../../mocks/price-list";
+import { useState } from "react";
 
 export const OrderCard = () => {
+  const [ticketTypeValue, setTicketTypeValue] = useState("standart");
+  const handleTicketTypeChange = (event) => {
+    setTicketTypeValue(event.target.value);
+  };
+
+  const [durationValue, setDurationValue] = useState(1);
+  const handleDurationChange = (event) => {
+    setDurationValue(event.target.value);
+  };
+
   return (
     <StyledOrderCard>
       <StyledOrderForm
@@ -27,27 +38,34 @@ export const OrderCard = () => {
             Продолжительность (часов)
           </Text>
           <StyledOrderDurationBox>
-            <DurationHours data={duration} />
+            <DurationHours data={duration} onChange={handleDurationChange} />
           </StyledOrderDurationBox>
           <Text variant="subtitle2" mb={12}>
             Тип билета
           </Text>
           <StyledOrderTicketType>
             <Accordion
-              onClick={() => console.log(`1`)}
               headerText="Стандартный"
               headerContent={
                 <Radio
                   mr={8}
                   name="ticketType"
                   value="standart"
+                  onChange={handleTicketTypeChange}
                   defaultChecked
                 />
               }
             />
             <Accordion
               headerText="VIP"
-              headerContent={<Radio mr={8} name="ticketType" value="VIP" />}
+              headerContent={
+                <Radio
+                  mr={8}
+                  name="ticketType"
+                  value="VIP"
+                  onChange={handleTicketTypeChange}
+                />
+              }
               accordionBody={<ItemList data={vipFeatures} />}
             />
           </StyledOrderTicketType>

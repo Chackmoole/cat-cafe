@@ -11,6 +11,7 @@ export const Radio = ({ m, mx, my, mt, mr, mb, ml, ...props }) => {
       $mr={mr}
       $mb={mb}
       $ml={ml}
+      onChange={props.onChange}
       {...props}
     />
   );
