@@ -27,6 +27,11 @@ export const OrderCard = () => {
     setDurationValue(event.target.value);
   };
 
+  const handleOnSubmit = (event) => {
+    event.preventDefault();
+    console.log(ticketTypeValue, durationValue);
+  };
+
   return (
     <StyledOrderCard>
       <StyledOrderForm
@@ -75,7 +80,9 @@ export const OrderCard = () => {
           <Text variant="h4" mb={40}>
             {priceList[ticketTypeValue] * durationValue} руб.
           </Text>
-          <StyledOrderBuyButton>Купить билет</StyledOrderBuyButton>
+          <StyledOrderBuyButton onClick={handleOnSubmit}>
+            Купить билет
+          </StyledOrderBuyButton>
         </StyledOrderLayout>
       </StyledOrderForm>
     </StyledOrderCard>
