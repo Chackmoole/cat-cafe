@@ -10,4 +10,5 @@ export const StyledAccordionArrowButton = styled.button`
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
+  transform: rotate(${(props) => (props.$isVisible ? "180deg" : 0)});
 `;

@@ -5,7 +5,7 @@ import {
   StyledDurationLabel,
 } from "./duration-hours-styled";
 
-export const DurationHours = ({ data }) => {
+export const DurationHours = ({ data, onChange }) => {
   return (
     <StyledDurationHours>
       {data.map((item) => {
@@ -16,6 +16,7 @@ export const DurationHours = ({ data }) => {
               name={item.name}
               defaultChecked={item.defaultChecked}
               value={item.value}
+              onChange={onChange}
             />
             <StyledDurationLabel>{item.value}</StyledDurationLabel>
           </StyledDurationInner>

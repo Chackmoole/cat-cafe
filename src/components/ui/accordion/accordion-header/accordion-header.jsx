@@ -7,7 +7,13 @@ export const AccordionHeader = (props) => {
     <StyledAccordionHeader>
       {props.headerContent}
       <Text>{props.headerText}</Text>
-      <StyledAccordionArrowButton type="button" />
+      {props.isPayLoaded ? (
+        <StyledAccordionArrowButton
+          type="button"
+          onClick={props.onClick}
+          $isVisible={props.isVisible}
+        />
+      ) : null}
     </StyledAccordionHeader>
   );
 };
